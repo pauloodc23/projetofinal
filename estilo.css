@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-size: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 .center{
     display: flex;
     flex-wrap: wrap;
@@ -18,79 +17,47 @@ html,body{
     overflow-y: hidden;
     overflow-x: hidden;
 }
-
 header{
     height: 200px;
     padding: 0px 0;
 }
-
 .logo{
      width: 50%;
 }
-
 .menu{
     padding-top: 80px;
     width: 50%;
     text-align: right;
 }
-
 .menu a{
     color: black;
     text-decoration: none;
     font-weight: bold;
     margin-right: 25px;
 }
-
-section.sobre{
-    height: calc(100% - 200px);
-    position: relative;
-}
-
-.extras{
-    position: absolute;
-    bottom: -550px;
-    right: -500px;
-    width: 1000px;
-    height: 1000px;
-    border-radius: 50%;
-    background-color:black;
-}
-
 .texto-sobre{
-    margin-top: 100px;
+    margin-top: 40px;
 }
-
 .texto-sobre h1{
-    font-size: 40px;
+    font-size: 35px;
 }
-
-.texto-sobre p{
-    margin: 30px 0;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    max-width: 800px;
+.holder {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
+.logomarcar{
+    width: 10%;
+    height: 10%;
 
-.button-principal{
-    border: 0;
-    background-color:black;
-    color: whitesmoke;
-    border-radius: 100px;
-    width: 130px;
-    height: 40px;
+}
+.logomarca:hover{
     cursor: pointer;
-    padding-left: 17px;
-    padding-right: 12px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    background-color: red;
+    transform: scale(1);
 }
-
-.button-principal a{
-    color: white;
-    text-decoration: none;
-}
-
 @media screen and (max-width: 600px) {
     .center {
         max-width: 100%;
@@ -104,5 +71,27 @@ section.sobre{
 
     .menu a {
         margin-right: 10px;
+    }
+
+    .social-media {
+        right: 0;
+        top: 10px;
+        text-align: center;
+    }
+
+    .social-media img {
+        margin: 5px;
+    }
+
+    .texto-sobre button {
+        width: 80px;
+        height: 25px;
+    }
+    
+    /* Mantendo as imagens no tamanho original */
+    .logo img,
+    .social-media img {
+        width: auto;
+        height: auto;
     }
 }
